@@ -4,8 +4,8 @@
   --color-accent: #ff3400;
   --color-heading: #1b0760;
   --color-body: #918c84;
-  --color-border:#ccc;
-  --border-radius:30px;
+  --color-border: #ccc;
+  --border-radius: 30px;
 }
 *,
 *::after,
@@ -14,7 +14,6 @@
 }
 html {
   font-size: 62.5%;
-  
 }
 /* typographt */
 body {
@@ -97,6 +96,7 @@ a {
 }
 .badge--small {
   font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
 }
 @media screen and (min-width: 1024px) {
   .badge {
@@ -185,66 +185,119 @@ a {
   width: 100%;
   display: inline-block;
 }
-.btn--outline{
+.btn--outline {
   background: #fff;
   color: var(--color-heading);
   border: 2px solid var(--color-heading);
 }
-.btn--outline:hover{
+.btn--outline:hover {
   background-color: var(--color-heading);
-  color:#fff;
+  color: #fff;
 }
-@media screen and (min-width:1024px) {
-  .btn{
+@media screen and (min-width: 1024px) {
+  .btn {
     font-size: 1.5rem;
   }
-  
 }
 /* inputs */
-.input{
+.input {
   border-radius: var(--border-radius);
   border: 1px solid var(--color-border);
-  color:var(--color-heading);
+  color: var(--color-heading);
   font-size: 2rem;
   outline: 0;
   padding: 1.5rem 3.5rem;
 }
-::placeholder{
+::placeholder {
   color: #cdcbc7;
 }
-.input--group{
+.input--group {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   display: flex;
 }
-.input--group .input{
+.input--group .input {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 1rem;
 }
-.input--group .btn{
+.input--group .btn {
   margin: 4px;
 }
-@media screen and (min-width:1024px) {
-  input{
-    font-size:1.5rem;
+@media screen and (min-width: 1024px) {
+  input {
+    font-size: 1.5rem;
   }
-  
 }
 /* Cards */
-.card{
+.card {
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
-  overflow: hidden ;
+  overflow: hidden;
 }
-.card__header ,.card__body{
-  padding:  2rem 3rem;
-} 
-.card--primary{
+.card__header,
+.card__body {
+  padding: 2rem 3rem;
+}
+.card--primary {
   background-color: var(--color-primary);
   color: #fff;
 }
-.card--secondary{
+.card--secondary {
   background-color: var(--color-secondary);
   color: #fff;
+}
+.card--secondary .badge--secondary {
+  background: #02cdf1;
+}
+/* plans */
+.plan__name {
+  color: #fff;
+  margin: 0;
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+.plan__price {
+  font-size: 6rem;
+}
+.plan__billing-cycle {
+  font-size: 2.4rem;
+  font-weight: 300;
+  opacity: 0.8;
+  margin-right: 1rem;
+}
+.plan__description {
+  font-size: 2rem;
+  font-weight: 3000;
+  letter-spacing: 1px;
+  display: block;
+}
+.plan .list__item {
+  margin-bottom: 2rem;
+}
+.plan--popular .card__header{
+  position: relative;
+}
+.plan--popular .card__header::before {
+  content: url(/images/popular.a6fe98f3.svg);
+  width: 40px;
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  right: 5%;
+   
+}
+@media screen and (min-width: 1024px) {
+  .plan__name {
+    font-size: 1.4rem;
+  }
+  .plan__price {
+    font-size: 5rem;
+  }
+  .plan__billing-cycle {
+    font-size: 1.6rem;
+  }
+  .plan__description {
+    font-size: 1.7rem;
+  }
 }
