@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
   </head>
   <body>
@@ -44,7 +45,7 @@
         <img class="hero__image" src="/images/banner.001ba340.webp" alt="" />
       </div>
     </section>
-    <section class="block container block-domain">
+    <section data-aos="zoom-in-up" class="block container block-domain">
       <header class="block__header">
         <h2>Starting at $9 per month</h2>
         <p>
@@ -74,7 +75,7 @@
         <li>.xyz $10</li>
       </ul>
     </section>
-    <section class="block container block--plans">
+    <section data-aos="fade-up" class="block container block--plans">
       <div class="grid grid--1x3">
         <div class="plan">
           <div class="card">
@@ -149,7 +150,7 @@
         </p>
       </header>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="zoom-in-up">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#easy"></use>
@@ -163,16 +164,21 @@
           </p>
           <a href="#" class="link-arrow">Learn more</a>
         </div>
-        <img class="feature__image" src="/images/easy.01749a24.webp" alt="" />
+        <img
+          data-aos="zoom-in-up"
+          class="feature__image"
+          src="/images/easy.01749a24.webp"
+          alt=""
+        />
       </article>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="zoom-in-up">
           <span class="icon-container">
             <svg class="icon icon--primary">
-              <use xlink:href="images/sprite.svg#easy"></use>
+              <use xlink:href="images/sprite.svg#computer"></use>
             </svg>
           </span>
-          <h3 class="feature__heading">Super Easy to Use</h3>
+          <h3 class="feature__heading">Simply fast websites</h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae ab
             provident, sit autem iste rem praesentium perspiciatis veritatis ad
@@ -180,16 +186,21 @@
           </p>
           <a href="#" class="link-arrow">Learn more</a>
         </div>
-        <img class="feature__image" src="/images/easy.01749a24.webp" alt="" />
+        <img
+          data-aos="zoom-in-up"
+          class="feature__image"
+          src="/images/fast.36029745.webp"
+          alt=""
+        />
       </article>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="zoom-in-up">
           <span class="icon-container">
             <svg class="icon icon--primary">
-              <use xlink:href="images/sprite.svg#easy"></use>
+              <use xlink:href="images/sprite.svg#wordpress"></use>
             </svg>
           </span>
-          <h3 class="feature__heading">Super Easy to Use</h3>
+          <h3 class="feature__heading">Wordpress Made Easy</h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae ab
             provident, sit autem iste rem praesentium perspiciatis veritatis ad
@@ -197,7 +208,12 @@
           </p>
           <a href="#" class="link-arrow">Learn more</a>
         </div>
-        <img class="feature__image" src="/images/easy.01749a24.webp" alt="" />
+        <img
+          data-aos="zoom-in-up"
+          class="feature__image"
+          src="/images/wordpress.c5854b7a.webp"
+          alt=""
+        />
       </article>
     </section>
     <section class="block block--dark block--skewed-right block-showcase">
@@ -205,7 +221,7 @@
         <h2>User-friendly Control Panel</h2>
       </header>
       <div class="container grid grid--1x2">
-        <picture class="block-showcase__image">
+        <picture class="block-showcase__image" data-aos="fade-right">
           <source
             type="image/webp"
             srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
@@ -216,7 +232,7 @@
           />
           <img src="/images/ipad.png" alt="" />
         </picture>
-        <ul class="list">
+        <ul class="list" data-aos="fade-up">
           <li>
             <div class="media">
               <div class="media__image">
@@ -238,7 +254,7 @@
             <div class="media">
               <div class="media__image">
                 <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#snap"></use>
+                  <use xlink:href="images/sprite.svg#growth"></use>
                 </svg>
               </div>
               <div class="media__body">
@@ -255,7 +271,7 @@
             <div class="media">
               <div class="media__image">
                 <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#snap"></use>
+                  <use xlink:href="images/sprite.svg#wordpress"></use>
                 </svg>
               </div>
               <div class="media__body">
@@ -271,7 +287,7 @@
         </ul>
       </div>
     </section>
-    <section class="block">
+    <section class="block" data-aos="zoom-in">
       <header class="block__header">
         <h2>What our Customers are saying</h2>
         <p>
@@ -317,59 +333,81 @@
         </div>
       </div>
     </section>
-<footer class="block block--dark footer">
-  <div class="container grid footer__sections">
-    <section class="collapsible collapsible--expanded footer__section">
-      <header class="collapsible__header">
-        <h2 class="collapsible__heading footer__heading">Products</h2>
+    <footer class="block block--dark footer">
+      <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Products</h2>
 
-        <svg class="icon icon--white collapsible__chevron">
-          <use xlink:href="images/sprite.svg#chevron"></use>
-        </svg>
-      </header>
-      <div class="collapsible__content">
-        <ul class="list">
-          <li><a href="#">Website Hosting</a></li>
-          <li><a href="#">Free Automated Wordpress</a></li>
-          <li><a href="#">Migrations</a></li>
-        </ul>
-      </div>
-    </section>
-    <section class="collapsible footer__section">
-      <header class="collapsible__header">
-        <h2 class="collapsible__heading footer__heading">Item 2</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Website Hosting</a></li>
+              <li><a href="#">Free Automated Wordpress</a></li>
+              <li><a href="#">Migrations</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Company</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="/sprite.7597089b.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Affiliates</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Support</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="/sprite.7597089b.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Knowledge Base</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Domains</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use href="/sprite.7597089b.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Domain Checker</a></li>
+              <li><a href="#">Domain Transfer</a></li>
+              <li><a href="#">Free Domain</a></li>
+            </ul>
+          </div>
+        </section>
 
-        <svg class="icon icon--white collapsible__chevron">
-          <use xlink:href="images/sprite.svg#chevron"></use>
-        </svg>
-      </header>
-      <div class="collapsible__content">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum nostrum
-        dolorem vitae adipisci eius facere. Vero sequi reprehenderit cupiditate
-        repellat!
+        <section class="footer__brand">
+          <img src="/images/logo.762e26a3.svg" alt="" />
+          <p class="footer__copyright">Copyright 2024 Millat hakem</p>
+        </section>
       </div>
-    </section>
-    <section class="collapsible footer__section">
-      <header class="collapsible__header">
-        <h2 class="collapsible__heading footer__heading">Item 3</h2>
-
-        <svg class="icon icon--white collapsible__chevron">
-          <use xlink:href="images/sprite.svg#chevron"></use>
-        </svg>
-      </header>
-      <div class="collapsible__content">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum nostrum
-        dolorem vitae adipisci eius facere. Vero sequi reprehenderit cupiditate
-        repellat!
-      </div>
-    </section>
-    <section class="footer__brand">
-      <img src="/images/logo.762e26a3.svg" alt="" />
-      <p class="footer__copyright">Copyright 2024 Millat hakem</p>
-    </section>
-  </div>
-</footer>
+    </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
